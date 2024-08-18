@@ -22,6 +22,8 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
+  width: 70vw;
+  text-align: left; 
 }
 
 .calc-screen {
@@ -53,7 +55,7 @@ body {
 .button{
   height: 10vh;
   width: 100%;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   border: none;
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
@@ -70,13 +72,31 @@ body {
 
 #Reset,#delete{
   font-size: medium;
-  font-weight: 500;
+  font-weight: 800;
   color: whitesmoke;
   background-color:#647299;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
 }
 
 #equal-sign{
   background-color: #D13F30;
   color: whitesmoke;
-
 }
+
+@media screen and (min-width:768px){
+  .calc-screen{
+    width:  28.5vw;
+  }
+
+  .calc-buttons{
+    width:  28.5vw;
+  }
+
+  .tex{
+    width:  28.5vw;
+  }
+
+  .button{
+    height: 7vh;
+  }
+} 
