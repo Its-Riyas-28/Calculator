@@ -19,43 +19,169 @@
       <input type="text" class="calc-screen" id="screen" disabled />
 
       <div class="calc-buttons">
+        <button
+          type="button"
+          onclick="appendTodisplay('7')"
+          class="button"
+          value="7"
+        >
+          7
+        </button>
 
-        <button type="button"  class="button" value="7">7</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('8')"
+          class="button"
+          value="8"
+        >
+          8
+        </button>
 
-        <button type="button"  class="button" value="8">8</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('9')"
+          class="button"
+          value="9"
+        >
+          9
+        </button>
 
-        <button type="button"  class="button" value="9">9</button>
+        <button
+          class="button special-operator g2"
+          onclick="deleteLastCharacter()"
+          id="delete"
+        >
+          DEL
+        </button>
 
-        <button class="button special-operator g2" id="delete">DEL</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('4')"
+          class="button"
+          value="4"
+        >
+          4
+        </button>
 
-        <button type="button" class="button" value="4">4</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('5')"
+          class="button"
+          value="5"
+        >
+          5
+        </button>
 
-        <button type="button" class="button" value="5">5</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('6')"
+          class="button"
+          value="6"
+        >
+          6
+        </button>
 
-        <button type="button" class="button" value="6">6</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('+')"
+          class="button operator"
+          value="+"
+        >
+          +
+        </button>
 
-        <button type="button" class="button operator"  value="+">+</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('1')"
+          class="button"
+          value="1"
+        >
+          1
+        </button>
 
-        <button type="button" class="button" value="1">1</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('2')"
+          class="button"
+          value="2"
+        >
+          2
+        </button>
 
-        <button type="button" class="button" value="2">2</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('3')"
+          class="button"
+          value="3"
+        >
+          3
+        </button>
 
-        <button type="button" class="button" value="3">3</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('-')"
+          class="button operator"
+          value="-"
+        >
+          -
+        </button>
 
-        <button type="button" class="button operator"  value="-">-</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('.')"
+          class="button operator"
+          id="decimal"
+          value="."
+        >
+          .
+        </button>
 
-        <button type="button" class="button operator"  id="decimal" value=".">.</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('0')"
+          class="button"
+          value="0"
+        >
+          0
+        </button>
 
-        <button type="button" class="button" value="0">0</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('/')"
+          class="button operator"
+          value="/"
+        >
+          /
+        </button>
 
-        <button type="button" class="button operator" value="/">/</button>
+        <button
+          type="button"
+          onclick="appendTodisplay('*')"
+          class="button operator"
+          value="*"
+        >
+          &times;
+        </button>
 
-        <button type="button" class="button operator"  value="*">&times;</button>
+        <button
+          type="button"
+          onclick="clearDisplay()"
+          class="button special-operator g1 g2"
+          id="Reset"
+          value="all-clear"
+        >
+          RESET
+        </button>
 
-        <button type="button" class="button special-operator g1 g2"  id="Reset" value="all-clear">RESET</button>
-
-        <button type="button" class="button special-operator g1"  id="equal-sign" value="=">=</button>
-
+        <button
+          type="button"
+          onclick="calculate()"
+          class="button special-operator g1"
+          id="equal-sign"
+          value="="
+        >
+          =
+        </button>
       </div>
     </div>
 
