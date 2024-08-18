@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3b4664;
+  width: 100%;
+  height: 100%;
+}
+
+.calc{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tex{
+  color: whitesmoke;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.calc-screen {
+  width: 70vw;
+  height: 10vh;
+  border-radius: 0.5rem;
+  background-color: #181f32;
+  margin-top: 20px;
+  text-align: right;
+  outline: none;
+  color: whitesmoke;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  border: none;
+}
+
+.calc-buttons{
+  width: 70vw;
+  background-color: #252D44;
+  margin-top: 20px;
+  border-radius: 0.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.button{
+  height: 10vh;
+  width: 100%;
+  border-radius: 0.25rem;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3B4664;
+  cursor: pointer;
+}
+
+.g1 {
+  width: 100%;
+  height: 5vh;
+  grid-column: span 2;
+}
+
+#Reset,#delete{
+  font-size: medium;
+  font-weight: 500;
+  color: whitesmoke;
+  background-color:#647299;
+}
+
+#equal-sign{
+  background-color: #D13F30;
+  color: whitesmoke;
+
+}
